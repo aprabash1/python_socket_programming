@@ -5,7 +5,7 @@ import socket
 def server_program():
     # get the hostname
     host = socket.gethostname()
-    port = 5030  # initiate port no above 1024
+    port = 5035  # initiate port no above 1024
 
     server_socket = socket.socket()  # get instance
     # look closely. The bind() function takes tuple as argument
@@ -36,7 +36,7 @@ def server_program():
 
 
 #client starts here
-
+'''
 
 def client_program():
     host = socket.gethostname()  # as both code is running on same pc
@@ -58,8 +58,8 @@ def client_program():
         message = input(" -> ")  # again take input
 
     client_socket.close()  # close the connection
-
+'''
 
 if __name__ == '__main__':
     server_program()
-    client_program()
+    #client_program()
